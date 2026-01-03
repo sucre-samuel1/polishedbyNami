@@ -58,7 +58,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800">Studio Location</h4>
+                    <h4 className="font-bold text-gray-800"> Location</h4>
                     <p className="text-gray-600">123 Nail Street, Beauty City, BC 12345</p>
                     <p className="text-sm text-gray-500">By appointment only</p>
                   </div>
