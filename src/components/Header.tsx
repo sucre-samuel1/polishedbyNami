@@ -17,8 +17,8 @@ const Header = ({ onBookNow }: { onBookNow: () => void }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">P</span>
+            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+              <span className="text-yellow-500 font-bold text-xl">P</span>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-800">PolishedbyNami</h1>
@@ -32,17 +32,56 @@ const Header = ({ onBookNow }: { onBookNow: () => void }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-pink-500 font-medium transition-colors"
+                className="text-gray-700 hover:text-yellow-500 font-medium transition-colors"
               >
                 {item.label}
               </a>
             ))}
+            {/* Book Now Button */}
             <button
-              onClick={onBookNow}
-              className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-semibold transition-colors"
-            >
-              Book Now
-            </button>
+  onClick={onBookNow}
+  className="
+    relative
+    w-full
+    max-w-xs
+    bg-gradient-to-r
+    from-gray-900
+    to-gray-800
+    hover:from-gray-800
+    hover:to-gray-700
+    text-yellow-400
+    px-8
+    py-4
+    rounded-full
+    font-bold
+    text-lg
+    transition-all
+    duration-300
+    shadow-xl
+    hover:shadow-2xl
+    transform
+    hover:-translate-y-1
+    active:translate-y-0
+    overflow-hidden
+    group/btn
+  "
+>
+  {/* Button shine effect */}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
+  
+  {/* Button text */}
+  <span className="relative flex items-center justify-center gap-2">
+    Book Now
+    {/* <svg 
+      className="w-5 h-5 transform group-hover/btn:translate-x-1 transition-transform duration-300" 
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+    </svg> */}
+  </span>
+</button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -65,7 +104,7 @@ const Header = ({ onBookNow }: { onBookNow: () => void }) => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-pink-500 py-2"
+                  className="text-gray-700 hover:text-yellow-500 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -76,7 +115,7 @@ const Header = ({ onBookNow }: { onBookNow: () => void }) => {
                   onBookNow();
                   setIsMenuOpen(false);
                 }}
-                className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-semibold mt-2"
+                className="bg-black hover:bg-gray-600 text-yellow-500  px-6 py-2 rounded-full font-semibold mt-2"
               >
                 Book Now
               </button>

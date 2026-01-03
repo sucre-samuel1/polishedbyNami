@@ -20,14 +20,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-8">
+    <footer className="bg-gray-900 text-yellow-500  pt-12 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Column */}
-          <div>
+          {/* <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
+              <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                <span className="text-yellow-500  font-bold text-xl">P</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">PolishedbyNami</h3>
@@ -42,16 +42,16 @@ const Footer = () => {
                 <a
                   key={social}
                   href="#"
-                  className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-gray-800 hover:bg-gray-600 rounded-full flex items-center justify-center transition-colors"
                 >
                   <span className="text-sm font-semibold">{social[0]}</span>
                 </a>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -65,10 +65,10 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-bold mb-4">Our Services</h4>
             <ul className="space-y-2">
               {servicesLinks.map((service) => (
@@ -79,10 +79,10 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-bold mb-4">Stay Updated</h4>
             <p className="text-gray-400 mb-4">
               Subscribe for nail trends and special offers.
@@ -91,13 +91,13 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="flex-1 px-4 py-2 bg-gray-800 text-yellow-500  rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
               />
-              <button className="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-r-lg font-semibold transition-colors">
+              <button className="bg-black hover:bg-gray-600 px-4 py-2 rounded-r-lg font-semibold transition-colors">
                 Subscribe
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}
@@ -109,13 +109,13 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-yellow-500  transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-yellow-500  transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-yellow-500  transition-colors">
                 Cancellation Policy
               </a>
             </div>

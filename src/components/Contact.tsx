@@ -3,11 +3,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 bg-gradient-to-b from-white to-gray-50">
+    <section id="contact" className="py-16 bg-gradient-to-b from-white to-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Get in <span className="text-pink-500">Touch</span>
+            Get in <span className="text-yellow-500">Touch</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Have questions or want to discuss a custom design? We'd love to hear from you.
@@ -66,7 +66,7 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="mt-8 pt-8 border-t">
+              {/* <div className="mt-8 pt-8 border-t">
                 <h4 className="font-bold text-gray-800 mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
                   {['Instagram', 'Facebook', 'TikTok'].map((platform) => (
@@ -79,7 +79,7 @@ const Contact = () => {
                     </a>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -138,7 +138,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-full font-semibold transition-colors shadow-lg"
+                  className="w-full bg-black hover:bg-gray-600 text-yellow-500  py-3 px-6 rounded-full font-semibold transition-colors shadow-lg"
                 >
                   Send Message
                 </button>

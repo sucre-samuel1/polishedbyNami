@@ -34,5 +34,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-pink-500;
+  @apply bg-black;
 }
